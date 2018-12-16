@@ -48,3 +48,7 @@ emit perf:timer:start "Oh My Fish init user config path"
 require --no-bundle --path $OMF_CONFIG
 emit perf:timer:finish "Oh My Fish init user config path"
 emit perf:timer:finish "Oh My Fish initialisation"
+#eval "$(pyenv virtualenv-init -)"
+
+status --is-interactive; and source (pyenv init -|psub)                                                                                                          
+status --is-interactive; and source (pyenv virtualenv-init -|psub)                                                                                                
