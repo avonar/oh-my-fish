@@ -34,7 +34,7 @@ fish install --path=~/.local/share/omf --config=~/.config/omf
 You can verify the integrity of the downloaded installer by verifying the script against [this checksum](bin/install.sha256):
 
 ```
-92ca680df48640e744b361d376194c5f5f8d6b4f1ac775d22417a0d8a8108767  install
+06844ca6876fac0ea949c8089d8c5f71e14b69d2bb1dc41f1d0677250a1c62e1  install
 ```
 
 You can also install Oh My Fish with Git or with an offline source tarball downloaded from the [releases page][releases]:
@@ -58,8 +58,8 @@ Run `install --help` for a complete list of install options you can customize.
 
 #### Known Issues
 
-- Due to a regression bug in fish 2.6 with some terminal emulators, right prompts make the shell unusable.  
-  OMF's `default` theme features a right prompt, so it's necessary to use an alternative theme until a fix is released.  
+- Due to a regression bug in fish 2.6 with some terminal emulators, right prompts make the shell unusable.
+  OMF's `default` theme features a right prompt, so it's necessary to use an alternative theme until a fix is released.
   (see [#541](https://github.com/oh-my-fish/oh-my-fish/issues/541))
 
 
@@ -107,9 +107,9 @@ Reload Oh My Fish and all plugins by using `exec` to replace current shell proce
 
 > This command tries to be as safe as possible, mitigating side-effects caused by `exec` and preventing the reload in case of background processes.
 
-#### `omf new pkg | theme` _`<name>`_
+#### `omf new plugin | theme` _`<name>`_
 
-Scaffold out a new package or theme.
+Scaffold out a new plugin or theme.
 
 > This creates a new directory under `$OMF_CONFIG/{pkg | themes}/` with a template.
 
